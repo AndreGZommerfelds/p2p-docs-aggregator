@@ -1,6 +1,8 @@
 # P2P Documentation Scraper
 
-A Python script for extracting and aggregating documentation from P2P.org.
+A Python tool that scrapes P2P.org documentation, downloads Markdown files concurrently, and aggregates them into a single, navigable document with table of contents.
+
+**GitHub Repository**: [p2p-docs-aggregator](https://github.com/AndreGZommerfelds/p2p-docs-aggregator)
 
 ## Overview
 
