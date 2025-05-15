@@ -1,6 +1,5 @@
 # Ignore generated output files
 failed_urls.txt
-p2p_aggregated_docs.md
 
 # Ignore downloaded markdown files directory
 /markdown_files/
