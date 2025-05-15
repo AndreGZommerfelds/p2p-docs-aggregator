@@ -1,0 +1,24 @@
+# Ignore generated output files
+failed_urls.txt
+p2p_aggregated_docs.md
+
+# Ignore downloaded markdown files directory
+/markdown_files/
+
+# Python virtual environment
+/venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Logs
+scraper.log
+*.log
+
+# OS specific files
+.DS_Store
+Thumbs.db 
