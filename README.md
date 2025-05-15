@@ -1,8 +1,6 @@
-# P2P Documentation Aggregator
+# P2P API Documentation Aggregator
 
 A Python tool that aggregates the P2P.org documentation, downloads Markdown files concurrently, and aggregates them into a single, navigable document with table of contents.
-
-**GitHub Repository**: [p2p-docs-aggregator](https://github.com/AndreGZommerfelds/p2p-docs-aggregator)
 
 ## Overview
 
