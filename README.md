@@ -1,6 +1,6 @@
-# P2P Documentation Scraper
+# P2P Documentation Aggregator
 
-A Python tool that scrapes P2P.org documentation, downloads Markdown files concurrently, and aggregates them into a single, navigable document with table of contents.
+A Python tool that aggregates the P2P.org documentation, downloads Markdown files concurrently, and aggregates them into a single, navigable document with table of contents.
 
 **GitHub Repository**: [p2p-docs-aggregator](https://github.com/AndreGZommerfelds/p2p-docs-aggregator)
 
@@ -18,16 +18,16 @@ This script:
 
 - Python 3.6+
 - Required packages:
-  - `requests` (required for both script versions)
-  - `tqdm` (required only for the main script)
+  - `requests`
+  - `tqdm`
 
 ## Installation
 
 1. Clone this repository:
 
    ```
-   git clone <repository-url>
-   cd p2p-docs-llm
+   git clone https://github.com/AndreGZommerfelds/p2p-docs-aggregator.git
+   cd p2p-docs-aggregator
    ```
 
 2. Install required packages:
@@ -36,53 +36,18 @@ This script:
    pip install -r requirements.txt
    ```
 
-   Or for minimal installation:
-
-   ```
-   pip install requests
-   ```
-
 ## Usage
 
-There are two script versions available:
-
-### 1. Main Script (with progress bar)
+Run the script with:
 
 ```
 python scrape_p2p_docs.py
 ```
 
-This version uses `tqdm` for a nice progress bar and provides the most detailed progress tracking.
-
-### 2. Simple Script (no extra dependencies)
+Alternatively, use the provided shell script, which sets up a virtual environment and installs dependencies:
 
 ```
-python scrape_p2p_docs_simple.py
-```
-
-This version only requires `requests` and provides basic progress tracking in the terminal.
-
-### Bash Script
-
-For convenience, you can also use the provided shell script, which sets up a virtual environment and installs dependencies:
-
-```
-./run_scraper.sh [OPTIONS]
-```
-
-The shell script supports the following options:
-
-- `-h, --help`: Show help message and exit
-- `-s, --simple`: Use the simple version (no tqdm dependency)
-- `-m, --minimal`: Use minimal dependencies (no tqdm)
-
-Examples:
-
-```
-./run_scraper.sh                    # Run the full version with all dependencies
-./run_scraper.sh --simple           # Run the simple script version
-./run_scraper.sh --minimal          # Use minimal dependencies
-./run_scraper.sh --simple --minimal # Run simple script with minimal dependencies
+./run_scraper.sh
 ```
 
 ## Output
@@ -106,7 +71,7 @@ You can modify the following constants in the script:
 ## Features
 
 - **Concurrent Downloads**: Uses ThreadPoolExecutor for efficient downloading
-- **Progress Tracking**: Shows a progress bar for downloads using tqdm (main script) or percentage in terminal (simple script)
+- **Progress Tracking**: Shows a progress bar for downloads using tqdm
 - **Robust Error Handling**: Implements retry logic with exponential backoff
 - **Rate Limiting**: Controls concurrent requests to avoid overwhelming the server
 - **Detailed Logging**: Logs all actions and errors for troubleshooting
