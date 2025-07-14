@@ -5,6 +5,9 @@ p2p-org-llms.md
 # Ignore downloaded markdown files directory
 /markdown_files/
 
+# Cursor editor files
+.cursor/
+
 # Python virtual environment
 /venv/
 
